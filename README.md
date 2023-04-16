@@ -1,6 +1,6 @@
-# Frontend Mentor - Testimonial Grid Section solution
+# Frontend Mentor - Single Price Card Component solution
 
-This is a solution to the [Testimonial Grid Section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Single Price Card Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub)). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -25,19 +25,15 @@ Users should be able to:
 
 #### Desktop Screens
 
-![screenshot](./screenshot-desktop.png)
+![screenshot](./screenshot_desktop.png)
 
 #### Mobile Screens
 
-![screenshot](./screenshot-mobile.png)
-
-#### Ipad Screens
-
-![screenshot](./screenshot-ipad.png)
+![screenshot](./screenshot_mobile.png)
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
+- Solution URL: (https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub)
 - Live Site URL: (https://ashebani.github.io/testimonials-grid-section-main/)
 
 ## My process
