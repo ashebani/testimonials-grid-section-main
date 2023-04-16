@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
-- Live Site URL: (https://nft-preview-card-component-gamma-eight.vercel.app/)
+- Live Site URL: (https://ashebani.github.io/testimonials-grid-section-main/)
 
 ## My process
 
