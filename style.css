@@ -1,0 +1,246 @@
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+    html,
+body {
+  height: 100%;
+}
+  */
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--light-grayish-blue);
+  color: white;
+  display: grid;
+  place-content: center;
+}
+
+.quotes {
+  display: grid;
+  gap: 1em;
+  margin: 1em;
+}
+.quote {
+  display: grid;
+  gap: 1em;
+  padding: 2em;
+  background-color: aqua;
+  border-radius: 0.5em;
+}
+
+.quote p:first-of-type {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 20px;
+}
+.quote p:last-of-type {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.writer-info {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.quote .writer-info p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.quote .writer-info span {
+  color: var(--white);
+  font-weight: 600;
+  display: block;
+  font-size: 20px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  aspect-ratio: 1 / 1;
+  margin-right: 1em;
+}
+
+.purple {
+  background-color: var(--violet);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 20%;
+}
+
+.black {
+  background-color: black;
+}
+
+.gray {
+  background-color: var(--dark-grayish-blue);
+}
+.white {
+  background-color: var(--white);
+}
+.last {
+  background-color: var(--white);
+}
+
+.quotes .last .important-quote {
+  color: var(--dark-blackish-blue);
+}
+.quotes .last .all-quote {
+  color: var(--dark-grayish-blue);
+}
+.quotes .white .important-quote {
+  color: var(--dark-blackish-blue);
+}
+.quotes .white .all-quote {
+  color: var(--dark-grayish-blue);
+}
+.quotes .white .writer-info p {
+  color: var(--dark-grayish-blue);
+}
+.quotes .white .writer-info span {
+  color: var(--dark-blackish-blue);
+}
+
+.quotes .last .writer-info p {
+  color: var(--dark-grayish-blue);
+}
+.quotes .last .writer-info span {
+  color: var(--dark-blackish-blue);
+}
+@media (min-width: 800px) {
+  .quotes {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .purple {
+    background-color: var(--violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 20%;
+    grid-column: span 2;
+  }
+
+  .black {
+    background-color: black;
+    grid-column: span 2;
+  }
+
+  .gray {
+    background-color: var(--dark-grayish-blue);
+  }
+  .white {
+    background-color: var(--white);
+  }
+  .last {
+    background-color: var(--white);
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1400px) {
+  body,
+  html {
+    height: 100%;
+  }
+  .quotes {
+    max-width: 1400px;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "first first second fifth"
+      "third forth forth fifth";
+  }
+  .quotes > * {
+    flex: 1;
+  }
+  .purple {
+    background-color: var(--violet);
+    grid-area: first;
+  }
+
+  .black {
+    background-color: black;
+    grid-area: forth;
+  }
+
+  .gray {
+    background-color: var(--dark-grayish-blue);
+
+    grid-area: second;
+  }
+  .white {
+    background-color: var(--white);
+    grid-area: third;
+  }
+  .last {
+    background-color: var(--white);
+    grid-area: fifth;
+  }
+}
